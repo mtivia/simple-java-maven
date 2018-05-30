@@ -4,9 +4,11 @@ public class App{
 
     private final String message = "Hello World!";
 
-    public App() {}
+    public App() throws Exception {
+    	throw new Exception();
+    }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(new App().getMessage());
     }
 
